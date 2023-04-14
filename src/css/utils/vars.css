@@ -1,0 +1,8 @@
+:root {
+    --color-primery: #555555;
+    --color-primery-dark: #303030;
+    --color-primery-inverted: #FFF;
+    --color-secondary: #9DA4BD;
+    --color-secondary-transparent: rgba(157, 164, 189, 0.6);
+    --color-brand: #FF6C00;
+}

@@ -1,0 +1,22 @@
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media screen and (nim-width: 480px) {
+    .container {
+        width: 448px;
+    }
+}
+
+@media screen and (nim-width: 768px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media screen and (nim-width: 1600px) {
+    .container {
+        width: 1200px;
+    }
+}

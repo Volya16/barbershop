@@ -1,0 +1,21 @@
+.dark-button {
+    color: var(--color-primery-dark);
+    font-size: 12px;
+    line-height: 1.333;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    border: 1px solid #FF6C00;
+    border-radius: 25px;
+}
+
+.light-button {
+    color: var(--color-primery-inverted);
+    font-size: 12px;
+    line-height: 1.333;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    border: 1px solid #FF6C00;
+    border-radius: 25px;
+}

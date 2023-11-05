@@ -1,0 +1,336 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+.header {
+    background-color: gray;
+}
+
+.header-link {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.2px;
+}
+
+.header-address-link {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    font-style: normal;
+}
+
+.booking-btn {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    border: 1px solid #FF6C00;
+    background-color: transparent;
+    width: 160px;
+    height: 40px;
+}
+
+.header-btn {}
+
+/* HERO */
+.hero {
+    background-color: gray;
+}
+
+.social-network {
+    color: #303030;
+    font-family: Open Sans;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.2px;
+}
+
+.hero-link {}
+
+.hero-title {
+    color: rgba(157, 164, 189, 0.60);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.hero-subtitle {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.6px;
+}
+
+.hero-text {
+    color: #9DA4BD;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.36px;
+}
+
+/* ABOUT */
+.about-subtitle {
+    color: #303030;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.about-title {
+    color: #303030;
+    font-family: Raleway;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.1px;
+}
+
+.about-lead {
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.36px;
+}
+
+.about-text {
+    color: #555;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.28px;
+}
+
+.about-btn {
+    color: #303030;
+}
+
+/* SERVICES */
+
+.services-subtitle {
+    color: rgba(157, 164, 189, 0.60);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.services-title {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.1px;
+}
+
+.services-art {
+    color: #9DA4BD;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.66;
+    letter-spacing: 0.36px;
+}
+
+.services-price {
+    color: #9DA4BD;
+    /* text-align: right; */
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.66;
+    letter-spacing: 0.36px;
+}
+
+.services-btn {
+    color: #303030;
+}
+
+/* REASON */
+.reason-number {
+    color: #303030;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.1px;
+}
+
+.reason-benefit {
+    color: #303030;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.reason-subtitle {
+    color: #303030;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.reason-title {
+    color: #303030;
+    font-family: Raleway;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.1px;
+}
+
+.reason-text {
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.66;
+    letter-spacing: 0.36px;
+}
+
+/* BARBERS */
+.barbers-subtitle {
+    color: #303030;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.barbers-title {
+    color: #303030;
+    font-family: Raleway;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.1px;
+}
+
+.barbers-name {
+    color: #303030;
+    /* text-align: center; */
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.36px;
+}
+
+.barbers-job-title {
+    color: #FF6C00;
+    /* text-align: center; */
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+
+/* SENSE */
+.sense-text {
+    color: #303030;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+/* BOOKING */
+.booking {
+    background-color: #191C26;
+}
+
+.booking-title {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.1px;
+}
+
+/* CONTACTS */
+.contacts {
+    background-color: #191C26;
+}
+
+.contacts-title {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.1px;
+}
+
+.contacts-adress {
+    color: #9DA4BD;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.66;
+    letter-spacing: 0.36px;}
+
+.contacts-tel {
+    color: #9DA4BD;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.66;
+    letter-spacing: 0.36px;
+    
+}
+
+.contacts-email {
+    color: #9DA4BD;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.66;
+    letter-spacing: 0.36px;
+}
+
+.working-title {
+    color: #FFF;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.working-hour {
+    color: #9DA4BD;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.66;
+    letter-spacing: 0.36px;
+}
+
+/* FOOTER */
+.footer-text {
+    color: #9DA4BD;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.2px;
+}
+
+.footer-list {}

@@ -1,24 +1,94 @@
+:root {
+    --light-title-color: #ffffff;
+    --dark-title-color: #303030;
+    --light-text-color: #9DA4BD;
+    --dark-text-color: #555555;
+    --section-barbers: #f7f7f7f;
+    --hover-color: #ff6c00;
+    --typical-lh: 1.36;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
-ul {
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul, ol {
     margin: 0;
     padding: 0;
-    list-style-type: none;
+    list-style: none;
 }
 
 a {
     text-decoration: none;
 }
 
+img {
+    display: block;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.btn {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    border-radius: 25px;
+    border: 1px solid #FF6C00;
+    background-color: transparent;
+    width: 160px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.top-text {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: var(--typical-lh);
+    text-transform: uppercase;
+}
+
+.title {
+    font-family: Raleway, sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.1px;
+    line-height: 1.17;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
 /* HEADER */
 .header {
+    padding-top: 32px;
     background-color: gray;
 }
 
 .header-link {
-    color: #FFF;
+    color: var(--light-title-color);
     font-size: 12px;
     font-weight: 600;
     line-height: normal;
@@ -26,7 +96,7 @@ a {
 }
 
 .header-address-link {
-    color: #FFF;
+    color: var(--light-title-color);
     font-size: 12px;
     font-weight: 600;
     line-height: normal;
@@ -34,21 +104,9 @@ a {
     font-style: normal;
 }
 
-.booking-btn {
-    color: #FFF;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 1.08px;
-    text-transform: uppercase;
-    border-radius: 25px;
-    border: 1px solid #FF6C00;
-    background-color: transparent;
-    width: 160px;
-    height: 40px;
+.header-btn {
+    color: var(--light-title-color);
 }
-
-.header-btn {}
 
 /* HERO */
 .hero {
@@ -56,8 +114,8 @@ a {
 }
 
 .social-network {
-    color: #303030;
-    font-family: Open Sans;
+    color: var(--dark-title-color);
+    font-family: Open Sans, sans-serif;
     font-size: 11px;
     font-weight: 600;
     line-height: normal;
@@ -66,25 +124,19 @@ a {
 
 .hero-link {}
 
-.hero-title {
-    color: rgba(157, 164, 189, 0.60);
-    font-size: 11px;
-    font-weight: 600;
-    line-height: normal;
-    text-transform: uppercase;
+.hero-top-text {
+    margin-bottom: 20px;
+    color: var(--light-text-color, 60%);
 }
 
-.hero-subtitle {
-    color: #FFF;
-    font-family: Raleway;
-    font-size: 72px;
-    font-weight: 700;
-    line-height: normal;
+.hero-title {
+    margin-bottom: 20px;
+    color: var(--light-title-color);
     letter-spacing: 3.6px;
 }
 
-.hero-text {
-    color: #9DA4BD;
+.hero-bottom-text {
+    color: var(--light-text-color);
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
@@ -92,33 +144,32 @@ a {
 }
 
 /* ABOUT */
-.about-subtitle {
-    color: #303030;
-    font-size: 11px;
-    font-weight: 600;
-    line-height: normal;
-    text-transform: uppercase;
+.about {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
-
 .about-title {
-    color: #303030;
-    font-family: Raleway;
-    font-size: 42px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 2.1px;
+    margin-bottom: 20px;
+    color: var(--dark-title-color);
 }
 
-.about-lead {
-    color: #555;
+.about-bottom-title {
+    margin-bottom: 20px;
+    color: var(--dark-title-color);
+}
+
+.about-top-text {
+    margin-bottom: 20px;
+    color: var(--dark-text-color);
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
     letter-spacing: 0.36px;
 }
 
-.about-text {
-    color: #555;
+.about-bottom-text {
+    margin-bottom: 42px;
+    color: var(--dark-text-color);
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
@@ -126,39 +177,32 @@ a {
 }
 
 .about-btn {
-    color: #303030;
+    color: var(--dark-title-color);
 }
 
 /* SERVICES */
+.services {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: gray;
+}
 
-.services-subtitle {
-    color: rgba(157, 164, 189, 0.60);
-    font-size: 11px;
-    font-weight: 600;
-    line-height: normal;
-    text-transform: uppercase;
+.services-top-text {
+    margin-bottom: 20px;
+    color: var(--light-text-color, 60%);
 }
 
 .services-title {
-    color: #FFF;
-    font-family: Raleway;
-    font-size: 42px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 2.1px;
+    margin-bottom: 44px;
+    color: var(--light-title-color);
 }
 
-.services-art {
-    color: #9DA4BD;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.66;
-    letter-spacing: 0.36px;
+.services-list {
+    padding: 30px 20px;
 }
 
-.services-price {
-    color: #9DA4BD;
-    /* text-align: right; */
+.services-text {
+    color: var(--light-text-color);
     font-size: 18px;
     font-weight: 400;
     line-height: 1.66;
@@ -166,95 +210,120 @@ a {
 }
 
 .services-btn {
-    color: #303030;
+    color: var(--dark-title-color);
 }
 
-/* REASON */
-.reason-number {
-    color: #303030;
+/* BENEFITS */
+.benefits {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.benefits-list {}
+
+.benefits-item {}
+
+.benefits-count {
+    color: var(--dark-title-color);
     text-align: center;
     font-size: 42px;
     font-weight: 700;
-    line-height: normal;
+    line-height: var(--typical-lh);
     letter-spacing: 2.1px;
 }
 
-.reason-benefit {
-    color: #303030;
+.benefits-item-text {
+    color: var(--dark-title-color);
     font-size: 11px;
     font-weight: 600;
-    line-height: normal;
+    line-height: var(--typical-lh);
 }
 
-.reason-subtitle {
-    color: #303030;
-    font-size: 11px;
-    font-weight: 600;
-    line-height: normal;
-    text-transform: uppercase;
+.benefits-top-text {
+    margin-bottom: 20px;
+    color: var(--dark-title-color);
 }
 
-.reason-title {
-    color: #303030;
-    font-family: Raleway;
-    font-size: 42px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 2.1px;
+.benefits-title {
+    margin-bottom: 20px;
+    color: var(--dark-title-color);
 }
 
-.reason-text {
-    color: #555;
+.benefits-text {
+    color: var(--dark-text-color);
     font-size: 18px;
     font-weight: 400;
-    line-height: 1.66;
+    line-height: 1.67;
     letter-spacing: 0.36px;
 }
 
 /* BARBERS */
-.barbers-subtitle {
-    color: #303030;
-    font-size: 11px;
-    font-weight: 600;
-    line-height: normal;
-    text-transform: uppercase;
+.barbers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    border-color: var(--section-barbers);
+}
+
+.barbers-top-text {
+    margin-bottom: 20px;
+    color: var(--dark-title-color);
 }
 
 .barbers-title {
-    color: #303030;
-    font-family: Raleway;
-    font-size: 42px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 2.1px;
+    margin-bottom: 44px;
+    color: var(--dark-title-color);
 }
 
-.barbers-name {
-    color: #303030;
-    /* text-align: center; */
+.barbers-list {
+    
+}
+
+.barbers-item {
+    
+}
+
+.barbers-pic {
+    margin-bottom: 30px;
+}
+
+.barbers-item-name {
+    margin-bottom: 8px;
+    color: var(--dark-title-color);
+    text-align: center;
     font-size: 18px;
     font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.36px;
+    line-height: 1.39;
+    letter-spacing: 0.02em;
 }
 
 .barbers-job-title {
-    color: #FF6C00;
-    /* text-align: center; */
+    margin-bottom: 30px;
+    color: var(--hover-color);
+    text-align: center;
     font-size: 14px;
     font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.28px;
+    line-height: var(--typical-lh);
+    letter-spacing: 0.02em;
 }
 
-/* SENSE */
-.sense-text {
-    color: #303030;
-    font-size: 11px;
-    font-weight: 600;
-    line-height: normal;
-    text-transform: uppercase;
+/* GALERRY */
+.gallery {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
+
+.gallery-top-text {
+    margin-bottom: 44px;
+    color: var(--dark-title-color);
+}
+
+.top-text {}
+
+.gallery-list {}
+
+.gallery-item {}
+
+.sense-item {}
 
 /* BOOKING */
 .booking {
@@ -262,36 +331,45 @@ a {
 }
 
 .booking-title {
-    color: #FFF;
-    font-family: Raleway;
-    font-size: 42px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 2.1px;
+    color: var(--light-title-color);
 }
 
 /* CONTACTS */
-.contacts {
+.contact {
+    padding-top: 130px;
+    padding-bottom: 120px;
     background-color: #191C26;
 }
 
-.contacts-title {
-    color: #FFF;
-    font-family: Raleway;
-    font-size: 42px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 2.1px;
+.contact-title {
+    margin-bottom: 40px;
+    color: var(--light-title-color);
 }
 
-.contacts-adress {
+.contact-list {}
+
+.contact-item {
+    margin-bottom: 20px;
+}
+
+.contact-item:last-child {
+    margin-bottom: 70px;
+}
+
+.contact-link {
     color: #9DA4BD;
     font-size: 18px;
-    font-weight: 700;
-    line-height: 1.66;
-    letter-spacing: 0.36px;}
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+}
 
-.contacts-tel {
+.contact-adress {
+    font-weight: 700;
+    
+}
+
+.contact-tel {
     color: #9DA4BD;
     font-size: 18px;
     font-weight: 400;
@@ -300,28 +378,26 @@ a {
     
 }
 
-.contacts-email {
-    color: #9DA4BD;
-    font-size: 18px;
+.contact-email {
     font-weight: 400;
-    line-height: 1.66;
-    letter-spacing: 0.36px;
+    text-decoration-line: underline;
 }
 
-.working-title {
-    color: #FFF;
+.contact-subtitle {
+    margin-bottom: 20px;
+    color: var(--light-title-color);
     font-size: 11px;
     font-weight: 600;
-    line-height: normal;
+    line-height: 1.36;
     text-transform: uppercase;
 }
 
-.working-hour {
+.contact-schedule {
     color: #9DA4BD;
     font-size: 18px;
     font-weight: 400;
-    line-height: 1.66;
-    letter-spacing: 0.36px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
 }
 
 /* FOOTER */
@@ -334,3 +410,4 @@ a {
 }
 
 .footer-list {}
+

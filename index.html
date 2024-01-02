@@ -18,6 +18,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/modal.js"></script>
   </head>
   <body>
     <header class="header">
@@ -46,13 +47,14 @@
             >+38 044 111 11 11</a
           >
         </address>
-        <button class="header-btn btn" type="button">Online-booking</button>
+        <button class="header-btn btn" type="button" data-modal-open>Online-booking</button>
       </div>
     </header>
     <main>
       <section class="hero">
         <div class="container hero-container">
-          <ul class="hero-list social-list">
+          <div class="hero-soc">
+            <ul class="hero-list social-list">
             <li class="hero-item social-network">
               <a
                 class="hero-link social-network"
@@ -72,6 +74,7 @@
               >
             </li>
           </ul>
+          </div>
           <div class="hero-wrap">
             <h1 class="hero-top-text top-text">A hair salon for men in Kyiv</h1>
             <p class="hero-title title">BarberShop</p>
@@ -212,6 +215,27 @@
               />
               <h3 class="barbers-item-name">John Smith</h3>
               <p class="barbers-job-title">Extreme Barber</p>
+              <ul class="barbers-soc-list list">
+                <li class="barbers-soc-item"><a href="" class="barbers-soc-link link" target="_blank" rel="noopener noreferrer">
+                  <svg class="barbers-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a></li>
+                <li class="barbers-soc-item"><a href="" class="barbers-soc-link link" target="_blank" rel="noopener noreferrer">
+                  <svg class="barbers-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a></li>
+                <li class="barbers-soc-item"><a href="" class="barbers-soc-link link" target="_blank" rel="noopener noreferrer">
+                  <svg class="barbers-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a></li>
+                <li class="barbers-soc-item"><a href="" class="barbers-soc-link link" target="_blank" rel="noopener noreferrer"><svg class="barbers-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a></li>
+              </ul>
             </li>
             <li class="barbers-item">
               <img
@@ -223,6 +247,27 @@
               />
               <h3 class="barbers-item-name">Michele Doe</h3>
               <p class="barbers-job-title">Extreme Barber</p>
+              <ul class="barbers-soc-list list">
+                <li class="barbers-soc-item"><a href="" class="barbers-soc-link link" target="_blank" rel="noopener noreferrer">
+                  <svg class="barbers-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a></li>
+                <li class="barbers-soc-item"><a href="" class="barbers-soc-link link" target="_blank" rel="noopener noreferrer">
+                  <svg class="barbers-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a></li>
+                <li class="barbers-soc-item"><a href="" class="barbers-soc-link link" target="_blank" rel="noopener noreferrer">
+                  <svg class="barbers-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a></li>
+                <li class="barbers-soc-item"><a href="" class="barbers-soc-link link" target="_blank" rel="noopener noreferrer"><svg class="barbers-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a></li>
+              </ul>
             </li>
             <li class="barbers-item">
               <img
@@ -234,6 +279,27 @@
               />
               <h3 class="barbers-item-name">Alan Black</h3>
               <p class="barbers-job-title">Extreme Barber</p>
+              <ul class="barbers-soc-list list">
+                <li class="barbers-soc-item"><a href="" class="barbers-soc-link link" target="_blank" rel="noopener noreferrer">
+                  <svg class="barbers-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a></li>
+                <li class="barbers-soc-item"><a href="" class="barbers-soc-link link" target="_blank" rel="noopener noreferrer">
+                  <svg class="barbers-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a></li>
+                <li class="barbers-soc-item"><a href="" class="barbers-soc-link link" target="_blank" rel="noopener noreferrer">
+                  <svg class="barbers-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a></li>
+                <li class="barbers-soc-item"><a href="" class="barbers-soc-link link" target="_blank" rel="noopener noreferrer"><svg class="barbers-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a></li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -341,5 +407,15 @@
         </ul>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="icon-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-modal-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

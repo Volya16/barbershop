@@ -8,6 +8,8 @@
     --hover-color: #ff6c00;
     --typical-lh: 1.36;
     --transition: 300ms linear;
+    --color-modal: #8E8F99;
+    --bg-backdrop: rgb(0 0 0 / 20%);
 }
 
 body {
@@ -58,6 +60,7 @@ img {
     min-width: 160px;
     height: 40px;
     cursor: pointer;
+    transition: background-color var(--transition), color var(--transition);
 }
 
 .top-text {
@@ -87,6 +90,7 @@ img {
 }
 
 .container {
+    /* width: 100%; */
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -549,19 +553,90 @@ width: calc((100% - 90px) / 4);
 
 .sense-item {}
 
-/* BOOKING */
-.booking {
+
+
+.contact-wrap {
+    width: 100%;
     background-color: var(--section-booking);
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.contact-wrap > .container {
+    display: flex;
+}
+
+/* BOOKONG */
+.booking {
+    width: calc(50% + 15px);
+    padding-right: 30px;
+    padding-left: 130px;
+    background-color: #8E8F99;
 }
 
 .booking-title {
     color: var(--light-title-color);
+    margin-bottom: 44px;
 }
+
+.online-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.online-field {
+    position: relative;
+    margin-bottom: 44px;
+}
+
+.online-input {
+    width: 270px;
+    height: 24px;
+    border: none;
+    border-bottom:1px solid rgba(157, 164, 189, 0.40);
+    background-color: transparent;
+    outline: none;
+}
+
+.online-label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: rgba(157, 164, 189, 0.40);
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    
+}
+
+.online-wrap-mess {
+    width: 100%;
+}
+
+.online-text {
+    width: 100%;
+    height: 76px;
+    border: none;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.40);
+    background-color: transparent;
+    resize: none;
+    outline: none;
+}
+
+.online-btn {
+    color: var(--light-title-color);
+}
+
+.btn {}
 
 /* CONTACTS */
 .contact {
-    padding-top: 130px;
-    padding-bottom: 120px;
+    padding-left: 100px;
+    width: calc(50% - 15px);
     background-color: #191C26;
     background-image: url(../images/contact-bg.png);
     background-repeat: no-repeat;
@@ -650,32 +725,35 @@ width: calc((100% - 90px) / 4);
 
 .footer-list {}
 
+
+/* MODAL*/
 .backdrop {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: rgba(17, 17, 17, 0.40);
+    background-color: var(--bg-backdrop);
     top: 0;
-    transition: opacity var(--transition), visibility var(--transition);
+    transition: opasity var(--transition), visibility var(--transition);
 }
 
 .is-hidden {
     visibility: none;
-    opacity: 0;
+    opacity: 0; 
     pointer-events: none;
 }
 
 .modal {
     position: absolute;
+    max-width: 410px;
+    min-height: 510px;
+    width: 100%;
+    background-color: var(--section-barbers);
+    border-radius: 5px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    transition: transform var(--transition);
-    width: 500px;
-    min-height: 500px;
-    background-color: var(--light-title-color);
-    border-radius: 5px;
-    padding: 30px;
+    transition: var(--transition);
+    padding: 24px;
 }
 
 .backdrop.is-hidden .modal {
@@ -683,23 +761,177 @@ width: calc((100% - 90px) / 4);
 }
 
 .modal-close {
-    width: 30px;
-    height: 30px;
-    border: 1px solid var(--dark-text-color);
+    display: block;
+    margin-left: auto;
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
+    border: 1px solid;
+    border-color: var(--hover-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: auto;
     cursor: pointer;
-    background-color: var(--light-text-color);
-    transition: fill var(--transition), background-color var(--transition), border-color var(--transition);
+    transition: background-color var(--transition), fill var(--transition);
+    margin-bottom: 24px;
 }
 
-.modal-close:hover, .modal-close:focus {
+.modal-close:hover {
     background-color: var(--hover-color);
-    border-color: transparent;
     fill: var(--light-title-color);
+    border-color: transparent;
+}
+
+.form-subtitle {
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    color: var(--section-booking);
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.contact-form {}
+
+.form-field:nth-child(-n+3) {
+    margin-bottom: 8px;
+}
+
+.form-label {
+    color: var(--dark-text-color);
+    font-size: 12px;
+    font-weight: 400;
+    /* line-height: 30px; */
+    letter-spacing: 0.36px;
+}
+
+.input-wrap {
+    position: relative;
+    margin-top: 4px;
+}
+
+.form-input {
+    font-size: 12px;
+    font-weight: 400;
+    /* line-height: 30px; */
+    letter-spacing: 0.36px;
+    max-width: 360px;
+    height: 40px;
+    width: 100%;
+    padding-left: 38px;
+    border-radius: 4px;
+    border: 1px solid var(--dark-text-color);
+    color: var(--dark-text-color);
+    padding-right: 16px;
+    outline: transparent;
+    transition: border-color var(--transition);
 }
 
 
+.form-input:hover,
+.form-input:focus {
+    border-color: var(--hover-color);
+}
+
+.form-input:hover +.form-icon,
+.form-input:focus +.form-icon {
+    fill: var(--hover-color);
+}
+
+.form-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill var(--transition);
+    
+}
+
+.form-field:nth-child(4) {
+    margin-bottom: 16px;
+}
+
+.form-textarea {
+    max-width: 360px;
+    width: 100%;
+    color: var(--dark-text-color);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.36px;
+    padding-left: 16px;
+    padding-right: 16px;
+    outline: transparent;
+    display: block;
+    margin-top: 4px;
+    resize: none;
+    width: 360px;
+    height: 120px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid var(--dark-text-color);
+    transition: border-color var(--transition);
+}
+
+.form-textarea:hover,
+.form-textarea:focus {
+    border-color: var(--hover-color);
+}
+
+.form-comment::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.36px;
+}
+
+.form-field:nth-child(5) {
+    margin-bottom: 24px;
+}
+
+.checkbox-text {
+    color: var(--dark-text-color);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.form-icon-wrap {
+    display: flex;
+    width: 14px;
+    height: 14px;
+    border: 1.25px solid var(--dark-text-color);
+    border-radius: 2px;
+    margin-right: 8px;
+    justify-content: center;
+    align-items: center;
+    fill: transparent;
+    transition: background-color var(--transition), border-color var(--transition), fill var(--transition);
+}
+
+.checkbox-input:checked + .checkbox-text .form-icon-wrap {
+    background-color: var(--hover-color);
+    fill: var(--light-title-color);
+    border-color: var(--hover-color);
+}
+
+.checkbox-link {
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+
+.form-btn {
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.form-btn:hover,
+.form-btn:focus {
+    background-color: var(--hover-color);
+    color: var(--light-title-color);
+}

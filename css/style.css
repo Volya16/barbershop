@@ -39,6 +39,9 @@ a {
 
 img {
   display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -98,10 +101,28 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1600px;
+  /* max-width: 1600px; */
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 448px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 /* HEADER */
@@ -473,8 +494,8 @@ img {
 
 /* BARBERS */
 .barbers {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 84px;
+  padding-bottom: 84px;
   background-color: var(--section-barbers);
 }
 
@@ -490,15 +511,21 @@ img {
 
 .barbers-list {
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap;
+  gap: 64px;
 }
 
 .barbers-item {
-  width: calc((100% - 60px) / 3);
+  /* width: calc((100% - 60px) / 3); */
+  width: 100%;
 }
 
 .barbers-pic {
   margin-bottom: 30px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-width: 418px;
 }
 
 .barbers-item-name {
@@ -546,14 +573,48 @@ img {
   fill: var(--hover-color);
 }
 
+@media screen and (min-width: 768px) {
+  /* .container {
+    max-width: 480px;
+  } */
+
+  .barbers {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .barbers-pic {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .barbers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .barbers-pic {
+    max-width: 370px;
+  }
+
+  .barbers-item {
+    width: calc((100% - 60px) / 3);
+  }
+
+  .barbers-list {
+    gap: 30px;
+  }
+}
+
 /* GALERRY */
 .gallery {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .gallery-top-text {
-  margin-bottom: 44px;
+  margin-bottom: 70px;
   color: var(--dark-title-color);
 }
 
@@ -562,24 +623,81 @@ img {
 
 .gallery-list {
   display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
   gap: 30px;
 }
 
 .gallery-item {
-  width: calc((100% - 90px) / 4);
+  /* width: calc((100% - 90px) / 4); */
+  width: 100%;
 }
 
-.sense-item {
+.gallery-pic {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-width: 418px;
 }
 
+/* @media screen and (min-width: 480px) {
+.container {
+    max-width: 448px;
+  }
+} */
+
+@media screen and (min-width: 768px) {
+  /* .container {
+    max-width: 720px;
+  } */
+
+  .gallery-top-text {
+    margin-bottom: 44px;
+  }
+
+  .gallery-item {
+    width: calc((100% - 30px) / 2);
+  }
+
+  .gallery-pic {
+    max-width: 330px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  /* .container {
+    max-width: 1200px;
+  } */
+
+  .gallery {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .gallery-top-text {
+    margin-bottom: 44px;
+  }
+
+  .gallery-item {
+    width: calc((100% - 90px) / 4);
+  }
+}
+
+/* CONTACT */
+.contact-wrap {
+  background-color: var(--section-booking);
+  margin: 0 auto;
+  /* background-image: url(../images/contact-bg.png);
+  background-repeat: no-repeat; */
+  
+}
+
+@media screen and (min-width: 1600px) {
 .contact-wrap {
   max-width: 1600px;
   margin: 0 auto;
-  background-color: var(--section-booking);
   padding-top: 120px;
   padding-bottom: 120px;
-  background-image: url(../images/contact-bg.png);
-  background-repeat: no-repeat;
   background-position: right;
   background-size: calc(50% - 15px) 100%;
 }
@@ -587,23 +705,16 @@ img {
 .contact-wrap > .container {
   display: flex;
 }
-
+}
 /* BOOKONG */
 .booking {
-  width: calc(50% + 15px);
-  padding-right: 30px;
-  /* padding-left: 130px; */
+  padding-top: 84px;
+  padding-bottom: 84px;
 }
 
 .booking-title {
   color: var(--light-title-color);
   margin-bottom: 44px;
-}
-
-.online-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .online-field {
@@ -637,7 +748,8 @@ img {
 }
 
 .online-input {
-  width: 270px;
+  max-width: 418px;
+  width: 100%;
   height: 24px;
   transition: transform var(--transition), border-color var(--transition);
 }
@@ -656,11 +768,8 @@ img {
   transition: transform var(--transition), color var(--transition);
 }
 
-.online-wrap-mess {
-  width: 100%;
-}
-
 .online-text {
+  max-width: 418px;
   width: 100%;
   height: 76px;
   resize: none;
@@ -670,16 +779,72 @@ img {
   color: var(--light-title-color);
 }
 
+@media screen and (min-width: 768px) {
+.booking {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.online-field-wrap {
+  display: flex;
+  gap: 30px;
+}
+
+.online-input {
+  min-width: 330px;
+  width: 100%;
+}
+
+.online-text {
+  min-width: 690px;
+  width: 100%;
+}
+}
+
+@media screen and (min-width: 1600px) {
+.booking {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: calc(50% + 15px);
+  padding-right: 30px;
+  /* padding-left: 130px; */
+}
+
+.online-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.online-field-wrap {
+  display: flex;
+  gap: 30px;
+}
+
+.online-input {
+  min-width: 270px;
+  
+  transition: transform var(--transition), border-color var(--transition);
+}
+
+
+
+.online-wrap-mess {
+  width: 100%;
+}
+
+.online-text {
+  min-width: 570px;
+}
+
 .btn {
+}
 }
 
 /* CONTACTS */
 .contact {
-  padding-left: 100px;
-  width: calc(50% - 15px);
-  /* background-color: #191c26; */
-  background-position: center;
-  background-size: cover;
+  padding-top: 84px;
+  padding-bottom: 84px;
 }
 
 .contact-title {
@@ -687,15 +852,12 @@ img {
   color: var(--light-title-color);
 }
 
-.contact-list {
-}
-
 .contact-item {
   margin-bottom: 20px;
 }
 
 .contact-item:last-child {
-  margin-bottom: 70px;
+  margin-bottom: 44px;
 }
 
 .contact-link {
@@ -750,6 +912,35 @@ img {
   letter-spacing: 0.02em;
 }
 
+@media screen and (min-width: 768px) {
+.contact {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+}
+
+@media screen and (min-width: 1600px) {
+.contact {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 100px;
+  width: calc(50% - 15px);
+  /* background-color: #191c26; */
+  background-position: center;
+  background-size: cover;
+}
+
+.contact-list {
+}
+
+.contact-item:last-child {
+  margin-bottom: 70px;
+}
+
+
+
+
+}
 /* FOOTER */
 .footer {
   padding-top: 56px;

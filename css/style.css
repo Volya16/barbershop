@@ -67,7 +67,7 @@ img {
   border-radius: 25px;
   border: 1px solid #ff6c00;
   background-color: transparent;
-  min-width: 160px;
+  width: 160px;
   height: 40px;
   cursor: pointer;
   transition: background-color var(--transition), color var(--transition);
@@ -936,9 +936,12 @@ img {
   margin-bottom: 44px;
 }
 
+
 .online-field {
   position: relative;
   margin-bottom: 44px;
+  max-width: 418px;
+  width: 100%;
 }
 
 .online-item {
@@ -967,8 +970,8 @@ img {
 }
 
 .online-input {
-  max-width: 418px;
-  width: 100%;
+  /* width: 100%;
+  max-width: 418px; */
   height: 24px;
   transition: transform var(--transition), border-color var(--transition);
 }
@@ -988,14 +991,35 @@ img {
 }
 
 .online-text {
-  max-width: 418px;
-  width: 100%;
+  /* width: 100%;
+  max-width: 418px; */
   height: 76px;
   resize: none;
 }
 
 .online-btn {
   color: var(--light-title-color);
+}
+
+@media screen and (max-width: 767px) {
+  .online-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .online-field-wrap {
+    width: 100%; 
+    max-width: 418px;
+  }
+
+  .online-input {
+    width: 100%; 
+  }
+
+  .online-text {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1042,11 +1066,8 @@ img {
 
 .online-input {
   min-width: 270px;
-  
   transition: transform var(--transition), border-color var(--transition);
 }
-
-
 
 .online-wrap-mess {
   width: 100%;
@@ -1054,9 +1075,6 @@ img {
 
 .online-text {
   min-width: 570px;
-}
-
-.btn {
 }
 }
 

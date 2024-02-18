@@ -905,23 +905,23 @@ img {
 /* CONTACT */
 .online-contacts-wrap {
   background-color: var(--section-booking);
-  margin: 0 auto;
-  /* background-image: url(../images/contact-bg.png);
-  background-repeat: no-repeat; */
-  
+  margin: 0 auto;  
 }
 
 @media screen and (min-width: 1200px) {
-.contact-wrap {
-  max-width: 1200px;
+.online-contacts-wrap {
+  max-width: 1600px;
   margin: 0 auto;
   padding-top: 120px;
   padding-bottom: 120px;
+  background-image: url(../images/contact-bg.png);
+  background-repeat: no-repeat;
   background-position: right;
+  background-color: var(--section-booking);
   background-size: calc(50% - 15px) 100%;
 }
 
-.contact-wrap > .container {
+.online-contacts-wrap > .container {
   display: flex;
 }
 }
@@ -1061,17 +1061,20 @@ img {
 }
 
 /* CONTACTS */
-.contact {
+.contacts {
   padding-top: 84px;
   padding-bottom: 84px;
 }
 
-.contact-title {
+.contacts-title {
   margin-bottom: 40px;
   color: var(--light-title-color);
 }
 
-.contact-item {
+.contacts-list {
+}
+
+.contacts-item {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
@@ -1083,11 +1086,11 @@ img {
   margin-right: 16px;
 }
 
-.contact-item:last-child {
+.contacts-item:last-child {
   margin-bottom: 44px;
 }
 
-.contact-link {
+.contacts-link {
   color: #9da4bd;
   font-size: 18px;
   font-style: normal;
@@ -1095,11 +1098,11 @@ img {
   letter-spacing: 0.02em;
 }
 
-.contact-adress {
+.contacts-adress {
   font-weight: 700;
 }
 
-.contact-tel {
+.contacts-tel {
   color: #9da4bd;
   font-size: 18px;
   font-weight: 400;
@@ -1107,12 +1110,12 @@ img {
   letter-spacing: 0.36px;
 }
 
-.contact-email {
+.contacts-email {
   font-weight: 400;
   text-decoration-line: underline;
 }
 
-.contact-subtitle {
+.contacts-subtitle {
   margin-bottom: 20px;
   color: var(--light-title-color);
   font-size: 11px;
@@ -1124,14 +1127,14 @@ img {
   gap: 20px;
 }
 
-.contact-subtitle::before {
+.contacts-subtitle::before {
   content: "";
   width: 60px;
   height: 1px;
   background-color: currentColor;
 }
 
-.contact-schedule {
+.contacts-schedule {
   color: #9da4bd;
   font-size: 18px;
   font-weight: 400;
@@ -1140,14 +1143,14 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-.contact {
+.contacts {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 }
 
 @media screen and (min-width: 1200px) {
-.contact {
+.contacts {
   padding-top: 0px;
   padding-bottom: 0px;
   padding-left: 100px;
@@ -1157,10 +1160,10 @@ img {
   background-size: cover;
 }
 
-.contact-list {
+.contacts-list {
 }
 
-.contact-item:last-child {
+.contacts-item:last-child {
   margin-bottom: 70px;
 }
 }

@@ -903,7 +903,7 @@ img {
 }
 
 /* CONTACT */
-.contact-wrap {
+.online-contacts-wrap {
   background-color: var(--section-booking);
   margin: 0 auto;
   /* background-image: url(../images/contact-bg.png);
@@ -913,7 +913,7 @@ img {
 
 @media screen and (min-width: 1200px) {
 .contact-wrap {
-  max-width: 1600px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-top: 120px;
   padding-bottom: 120px;
@@ -1073,6 +1073,14 @@ img {
 
 .contact-item {
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.contacts-icon {
+  stroke: var(--light-text-color);
+  fill: transparent;
+  margin-right: 16px;
 }
 
 .contact-item:last-child {
@@ -1155,7 +1163,6 @@ img {
 .contact-item:last-child {
   margin-bottom: 70px;
 }
-
 }
 /* FOOTER */
 .footer {

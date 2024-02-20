@@ -570,7 +570,7 @@ img {
 
 .benefits-list {
   display: flex;
-  width: 417px;
+  width: 418px;
   flex-wrap: wrap;
   flex-shrink: 0;
 }
@@ -633,9 +633,10 @@ img {
 }
 
 .benefits-title {
+  font-size: 38px;
   margin-bottom: 20px;
   color: var(--dark-title-color);
-  width: 430px;
+  width: 418px;
 }
 
 .benefits-text {
@@ -654,8 +655,16 @@ img {
 }
 
 .benefits-list {
+  width: 450px;
   margin-left: auto;
 }
+
+.benefits-item {
+  width: 210px;
+  padding: 20px 44px;
+}
+
+.benefits-title {}
 
 .benefits-text {
   width: 500px;
@@ -677,10 +686,7 @@ img {
 }
 
 .benefits-list {
-  display: flex;
   width: 370px;
-  flex-wrap: wrap;
-  flex-shrink: 0;
 }
 
 .benefits-item {
@@ -903,9 +909,17 @@ img {
 }
 
 /* CONTACT */
-.online-contacts-wrap {
+/*.online-contacts-wrap {
   background-color: var(--section-booking);
   margin: 0 auto;  
+}
+
+@media screen and (max-width:1199px) {
+  .online-contacts-wrap {
+  background-image: url(../images/contact-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
 }
 
 @media screen and (min-width: 1200px) {
@@ -923,12 +937,13 @@ img {
 
 .online-contacts-wrap > .container {
   display: flex;
-}
-}
+} 
+}*/
 /* BOOKONG */
 .booking {
   padding-top: 84px;
   padding-bottom: 84px;
+  background-color: var(--section-booking);
 }
 
 .booking-title {
@@ -1082,6 +1097,17 @@ img {
 .contacts {
   padding-top: 84px;
   padding-bottom: 84px;
+  background-color: var(--section-booking);
+  background-image: url(../images/contact-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.container-contacts {
+  /* background-image: url(../images/contact-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 100%; */
 }
 
 .contacts-title {

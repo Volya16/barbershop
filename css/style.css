@@ -134,6 +134,7 @@ img {
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header-navigation {
@@ -145,9 +146,14 @@ img {
   margin-right: 130px;
 }
 
+.logo {
+  fill: var(--light-title-color);
+}
+
 .header-list {
-  display: flex;
-  gap: 30px;
+  display: none;
+  /* display: flex;
+  gap: 30px; */
 }
 
 .header-link {
@@ -159,7 +165,8 @@ img {
 }
 
 .header-address {
-  margin-left: auto;
+  display: none;
+  /* margin-left: auto; */
 }
 
 .header-address-link {
@@ -172,9 +179,22 @@ img {
 }
 
 .header-btn {
-  color: var(--light-title-color);
+  display: none;
+  /* color: var(--light-title-color);
   background-color: transparent;
-  margin-left: 40px;
+  margin-left: 40px; */
+}
+
+.burger-button {
+    fill: var(--light-title-color);
+    width: 24px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    padding: 0;
 }
 
 /* HERO */

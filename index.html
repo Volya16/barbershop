@@ -26,7 +26,7 @@
         <nav class="header-navigation">
           <a class="header-logo" href="">
             <svg class="logo" width="69" height="55">
-              <use href="./images/icons.svg#icon-logo" ></use>
+              <use href="./images/icons.svg#icon-logo"></use>
             </svg>
           </a>
           <ul class="header-list">
@@ -52,60 +52,69 @@
         <button class="header-btn btn" type="button" data-modal-open>
           Online-booking
         </button>
-        <button class="burger-button">
+        <button class="burger-button js-open-menu">
           <svg class="icon-burger" width="24" height="16">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
         </button>
       </div>
-      <!-- <div class="mob-menu">
-        <nav class="header-navigation">
-          <ul class="header-list">
-            <li class="header-items">
-              <a class="header-link" href="#about">About</a>
+      <div class="mob-menu js-menu-container">
+        <button
+          class="menu-close-btn js-close-menu"
+          type="button"
+          data-modal-close
+        >
+          <svg class="mob-close-btn" width="19" height="19">
+            <use href="./images/icons.svg#icon-modal-close"></use>
+          </svg>
+        </button>
+        <nav class="mob-menu-navigation">
+          <ul class="mob-menu-list">
+            <li class="mob-menu-items">
+              <a class="mob-menu-link" href="#about">About</a>
             </li>
-            <li class="header-items">
-              <a class="header-link" href="#services">Services and prices</a>
+            <li class="mob-menu-items">
+              <a class="mob-menu-link" href="#services">Services and prices</a>
             </li>
-            <li class="header-items">
-              <a class="header-link" href="#barbers">Barbers</a>
+            <li class="mob-menu-items">
+              <a class="mob-menu-link" href="#barbers">Barbers</a>
             </li>
-            <li class="header-items">
-              <a class="header-link" href="#contacts">Contacts</a>
+            <li class="mob-menu-items">
+              <a class="mob-menu-link" href="#contacts">Contacts</a>
             </li>
           </ul>
         </nav>
-        <address class="header-address">
-          <a class="header-address-link" href="tel:+380441111111"
+        <address class="mob-menu-address">
+          <a class="mob-menu-address-link" href="tel:+380441111111"
             >+38 044 111 11 11</a
           >
         </address>
-        <button class="header-btn btn" type="button" data-modal-open>
+        <button class="mob-menu-btn btn" type="button" data-modal-open>
           Online-booking
         </button>
-        <div class="hero-soc">
-            <ul class="hero-list social-list">
-              <li class="hero-item social-network">
-                <a
-                  class="hero-link social-network"
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  >Instagram</a
-                >
-              </li>
-              <li class="hero-item social-network">
-                <a
-                  class="hero-link social-network"
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  >Youtube</a
-                >
-              </li>
-            </ul>
-          </div>
-      </div> -->
+        <div class="mob-menu-soc">
+          <ul class="mob-soc-list social-list">
+            <li class="mob-soc-item">
+              <a
+                class="mob-soc-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Instagram</a
+              >
+            </li>
+            <li class="mob-soc-item">
+              <a
+                class="mob-soc-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Youtube</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
       <section class="hero">
@@ -142,7 +151,7 @@
           </div>
         </div>
       </section>
-      <!-- <section class="about" id="about">
+      <section class="about" id="about">
         <div class="container about-container">
           <ul class="about-list">
             <li class="about-item">
@@ -155,22 +164,44 @@
                   media="(max-width: 1199px)"
                 />
                 <source
-                  srcset="./images/about-img-1.jpg 1x, 
-                  ./images/about-img-1@2x.jpg 2x"
+                  srcset="
+                    ./images/about-img-1.jpg    1x,
+                    ./images/about-img-1@2x.jpg 2x
+                  "
                   media="(min-width: 1200px)"
                 />
-                <img class="about-img" src="./images/about-img-1.jpg" alt="firt-about" width="270" height="445">
+                <img
+                  class="about-img"
+                  src="./images/about-img-1.jpg"
+                  alt="firt-about"
+                  width="270"
+                  height="445"
+                />
               </picture>
             </li>
             <li class="about-item">
               <picture>
                 <source
-                srcset="./images/about-img-2-tab.jpg 1x, ./images/about-img-2-tab@2x.jpg 2x"
-                media="(max-width: 1199px)"/>
-                <source 
-                srcset="./images/about-img-2.jpg 1x, ./images/about-img-2@2x.jpg 2x"
-                media="(min-width: 1200px)"/>
-                <img class="about-img" src="./images/about-img-2.jpg" alt="firt-about" width="270" height="445">
+                  srcset="
+                    ./images/about-img-2-tab.jpg    1x,
+                    ./images/about-img-2-tab@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/about-img-2.jpg    1x,
+                    ./images/about-img-2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="about-img"
+                  src="./images/about-img-2.jpg"
+                  alt="firt-about"
+                  width="270"
+                  height="445"
+                />
               </picture>
             </li>
           </ul>
@@ -193,8 +224,8 @@
             <button class="about-btn btn" type="button">Online-booking</button>
           </div>
         </div>
-      </section> -->
-      <!-- <section class="services" id="services">
+      </section>
+      <section class="services" id="services">
         <div class="container">
           <p class="services-top-text top-text">
             Spend your time with the best masters
@@ -240,8 +271,8 @@
           </div>
           <button class="services-btn btn" type="button">Online-booking</button>
         </div>
-      </section> -->
-      <!-- <section class="benefits">
+      </section>
+      <section class="benefits">
         <div class="container benefits-container">
           <ul class="benefits-list">
             <li class="benefits-item">
@@ -270,8 +301,8 @@
             </p>
           </div>
         </div>
-      </section> -->
-      <!-- <section class="barbers" id="barbers">
+      </section>
+      <section class="barbers" id="barbers">
         <div class="container barbers-container">
           <p class="barbers-top-text top-text">
             For true enjoyers of the atmosphere
@@ -522,8 +553,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="gallery">
+      </section>
+      <section class="gallery">
         <div class="container">
           <h1 class="visually-hidden">Gallery</h1>
           <p class="gallery-top-text top-text">
@@ -628,8 +659,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <div class="online-contacts-wrap">
+      </section>
+      <div class="online-contacts-wrap">
         <section class="booking">
           <div class="container">
             <h1 class="booking-title title">Online-booking</h1>
@@ -717,9 +748,9 @@
             </div>
           </div>
         </section>
-      </div> -->
+      </div>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <p class="footer-text">&#169;Copyright 2020</p>
         <ul class="footer-list social-list">
@@ -743,7 +774,7 @@
           </li>
         </ul>
       </div>
-    </footer> -->
+    </footer>
     <!-- <div class="backdrop is-hidden" is-hidden data-modal>
       <div class="modal">
         <button class="modal-close" type="button" data-modal-close>
@@ -837,5 +868,6 @@
       </div>
     </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

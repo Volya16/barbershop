@@ -137,11 +137,6 @@ img {
   justify-content: space-between;
 }
 
-.header-navigation {
-  display: flex;
-  align-items: center;
-}
-
 .logo {
   fill: var(--light-title-color);
 }
@@ -174,16 +169,17 @@ img {
   position: fixed;
   right: 0;
   top: 0;
+  bottom: 0;
   z-index: 1;
-  width: 70%;
-  height: 100%;
+  width: 100%;
+  max-width: 70%;
   background-color: var(--light-title-color);
   padding: 48px 41px;
   transform: translateX(100%);
   transition: transform var(--transition);
 }
 
-.mobile-menu.is-open {
+.mob-menu.is-open {
   transform: translateX(0);
 }
 
@@ -194,8 +190,7 @@ img {
   border: none;
   background-color: transparent;
 }
-.mob-close-btn {
-}
+
 .mob-menu-navigation {
 }
 .mob-menu-list {
@@ -284,6 +279,15 @@ img {
   display: none;
 }
 
+.header-container {
+  align-items: flex-start;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
 .header-list {
 display: flex;
 gap: 20px;
@@ -300,11 +304,12 @@ gap: 20px;
 .adress-wrap {
   display: flex;
   flex-direction: column-reverse;
+  align-items: center;
+  gap: 20px;
 }
 
 .header-address {
   display: block;
-  margin-left: auto;
 }
 
 .burger-button {
@@ -324,7 +329,6 @@ display: none;
   display: block;
   color: var(--light-title-color);
   background-color: transparent;
-  margin-left: 40px;
 }
 }
 
@@ -342,6 +346,15 @@ gap: 30px;
   display: flex;
   flex-direction: row;
   align-items: baseline;
+}
+
+.header-address {
+  display: block;
+  margin-left: auto;
+}
+
+.header-btn {
+  margin-left: 40px;
 }
 }
 
@@ -899,7 +912,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 
 .benefits-item {
-  width: 193px;
+  width: 100%;
+  max-width: 193px;
   height: 133px;
   background-color: #f7f7f7;
   padding: 20px 35px;
@@ -959,7 +973,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   font-size: 38px;
   margin-bottom: 20px;
   color: var(--dark-title-color);
-  width: 418px;
+  max-width: 418px;
 }
 
 .benefits-text {
@@ -968,7 +982,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   font-weight: 400;
   line-height: 1.67;
   letter-spacing: 0.36px;
-  width: 418px;
+  max-width: 418px;
 }
 
 @media screen and (min-width: 768px) and (max-width:1199px){

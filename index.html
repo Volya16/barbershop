@@ -45,14 +45,14 @@
           </ul>
         </nav>
         <div class="adress-wrap">
-        <address class="header-address">
-          <a class="header-address-link" href="tel:+380441111111"
-            >+38 044 111 11 11</a
-          >
-        </address>
-        <button class="header-btn btn" type="button" data-modal-open>
-          Online-booking
-        </button>
+          <address class="header-address">
+            <a class="header-address-link" href="tel:+380441111111"
+              >+38 044 111 11 11</a
+            >
+          </address>
+          <button class="header-btn btn" type="button" data-modal-open>
+            Online-booking
+          </button>
         </div>
         <button class="burger-button js-open-menu">
           <svg class="icon-burger" width="24" height="16">
@@ -662,7 +662,95 @@
           </ul>
         </div>
       </section>
-      <div class="online-contacts-wrap">
+      <section class="contacts">
+        <div class="container">
+          <div class="contact-container">
+            <div class="contact-form">
+              <p class="form-title title">Online-booking</p>
+              <form class="form" name="form">
+                <div class="form-field">
+                  <input
+                    class="online-input online-item"
+                    type="text"
+                    id="online-name"
+                    name="online-name"
+                    required
+                    placeholder=" "
+                  />
+                  <label for="online-name" class="online-label">Name*</label>
+                </div>
+                <div class="form-field">
+                  <input
+                    class="online-input online-item"
+                    type="text"
+                    id="online-tel"
+                    name="online-tel"
+                    required
+                    placeholder=" "
+                  />
+                  <label for="online-tel" class="online-label">Phone*</label>
+                </div>
+                <div class="form-field">
+                  <textarea
+                  class="online-text online-item"
+                  name="online-mess"
+                  id="online-mess"
+                  placeholder=" "
+                ></textarea>
+                <label for="online-mess" class="online-label">Message</label>
+                </div>
+              </form>
+            </div>
+            <div class="contact-info">
+              <h1 class="contacts-title title">Contacts</h1>
+              <div class="contacts-wrapper">
+                <adress>
+                  <ul class="contacts-list">
+                    <li class="contacts-item">
+                      <svg class="contacts-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-map-pin"></use>
+                      </svg>
+                      <a
+                        class="contacts-link contact-adress"
+                        href="https://maps.app.goo.glfpdobEDbS23QjoeT6"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >st. Vasilkivska, 7A <br />
+                        Kyiv, 08132</a
+                      >
+                    </li>
+                    <li class="contacts-item">
+                      <svg class="contacts-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                      </svg>
+                      <a
+                        class="contacts-link contact-tel"
+                        href="tel+380441111111"
+                        >+38 044 111 11 11</a
+                      >
+                    </li>
+                    <li class="contacts-item">
+                      <svg class="contacts-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-mail"></use>
+                      </svg>
+                      <a
+                        class="contacts-link contact-email"
+                        href="mailto:barbershop@email.com"
+                        >barbershop@email.com</a
+                      >
+                    </li>
+                  </ul>
+                </adress>
+                <div class="working-hours-wrap" width="24" height="24">
+                  <h3 class="contacts-subtitle">Working hours</h3>
+                  <p class="contacts-schedule">Every day from 9:00to 22:00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <div class="container online-contacts-wrap">
         <section class="booking">
           <div class="container">
             <h1 class="booking-title title">Online-booking</h1>
@@ -750,7 +838,7 @@
             </div>
           </div>
         </section>
-      </div>
+      </div> -->
     </main>
     <footer class="footer">
       <div class="container footer-container">

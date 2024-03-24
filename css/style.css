@@ -1245,39 +1245,227 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   }
 }
 
+/* CONTACTS */
+.contact-container {
+  background-color: var(--section-booking);
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-container {
+    display: flex;
+  }
+}
+
+
+/* Form  */
+.contact-form {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  background-color: var(--section-booking);
+}
+.form-title {
+  color: var(--light-title-color);
+  margin-bottom: 44px;
+}
+.title {
+}
+.form {
+}
+.online-field {
+}
+.online-input {
+}
+.online-item {
+}
+.online-label {
+}
+.online-wrap-mess {
+}
+.online-text {
+}
+.online-btn {
+}
+.btn {
+}
+
+
+@media screen and (min-width: 768px) {
+  .contact-form {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-form {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  width: calc(50% + 15px);
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+}
+}
+
+/* CONTACTS */
+.contact-info {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  background-color: var(--section-booking);
+  background-image: url(../images/contact-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 100%;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .contact-info {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  background-color: var(--section-booking);
+  background-image: url(../images/contact-bg@2x.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  }
+}
+
+.contacts-title {
+  margin-bottom: 40px;
+  color: var(--light-title-color);
+}
+
+.contacts-list {
+}
+
+.contacts-item {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.contacts-icon {
+  stroke: var(--light-text-color);
+  fill: transparent;
+  margin-right: 16px;
+}
+
+.contacts-item:last-child {
+  margin-bottom: 44px;
+}
+
+.contacts-link {
+  color: #9da4bd;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.contacts-adress {
+  font-weight: 700;
+}
+
+.contacts-tel {
+  color: #9da4bd;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.66;
+  letter-spacing: 0.36px;
+}
+
+.contacts-email {
+  font-weight: 400;
+  text-decoration-line: underline;
+}
+
+.contacts-subtitle {
+  margin-bottom: 20px;
+  color: var(--light-title-color);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.36;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contacts-subtitle::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.contacts-schedule {
+  color: #9da4bd;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 768px) {
+.contacts-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+}
+
+@media screen and (min-width: 1200px) {
+.contact-info {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  width: calc(50% - 15px);
+  padding-left: 100px;
+  width: calc(50% - 15px);
+  background-color: #191c26;
+  background-position: center;
+  background-size: cover;
+}
+
+.contacts-list {
+}
+
+.contacts-item:last-child {
+  margin-bottom: 70px;
+}
+} 
+
 /* CONTACT */
 /*.online-contacts-wrap {
   background-color: var(--section-booking);
-  margin: 0 auto;  
-}
+  margin: 0 auto; 
+}  */
 
-@media screen and (max-width:1199px) {
+/* @media screen and (max-width:1199px) {
   .online-contacts-wrap {
   background-image: url(../images/contact-bg.png);
   background-repeat: no-repeat;
   background-position: bottom;
 }
-}
+}*/
 
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
 .online-contacts-wrap {
+  display: flex;
   max-width: 1600px;
   margin: 0 auto;
-  padding-top: 120px;
-  padding-bottom: 120px;
-  background-image: url(../images/contact-bg.png);
-  background-repeat: no-repeat;
-  background-position: right;
   background-color: var(--section-booking);
   background-size: calc(50% - 15px) 100%;
 }
+} */
 
-.online-contacts-wrap > .container {
+/*.online-contacts-wrap > .container {
   display: flex;
 } 
 }*/
 /* BOOKONG */
-.booking {
+/* .booking {
   padding-top: 84px;
   padding-bottom: 84px;
   background-color: var(--section-booking);
@@ -1292,8 +1480,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 .online-field {
   position: relative;
   margin-bottom: 44px;
-  max-width: 418px;
   width: 100%;
+  max-width: 418px;
 }
 
 .online-item {
@@ -1322,8 +1510,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 
 .online-input {
-  /* width: 100%;
-  max-width: 418px; */
+  width: 100%;
+  max-width: 418px;
   height: 24px;
   transition: transform var(--transition), border-color var(--transition);
 }
@@ -1343,8 +1531,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 
 .online-text {
-  /* width: 100%;
-  max-width: 418px; */
+  width: 100%;
+  max-width: 418px;
   height: 76px;
   resize: none;
 }
@@ -1398,11 +1586,11 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
 @media screen and (min-width: 1200px) {
 .booking {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   width: calc(50% + 15px);
   padding-right: 30px;
-  /* padding-left: 130px; */
+  padding-left: 130px;
 }
 
 .online-form {
@@ -1428,10 +1616,10 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 .online-text {
   min-width: 570px;
 }
-}
+} */
 
 /* CONTACTS */
-.contacts {
+/* .contacts {
   padding-top: 84px;
   padding-bottom: 84px;
   background-color: var(--section-booking);
@@ -1454,10 +1642,10 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 
 .container-contacts {
-  /* background-image: url(../images/contact-bg.png);
+  background-image: url(../images/contact-bg.png);
   background-repeat: no-repeat;
   background-position: bottom;
-  width: 100%; */
+  width: 100%;
 }
 
 .contacts-title {
@@ -1545,11 +1733,11 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
 @media screen and (min-width: 1200px) {
 .contacts {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   padding-left: 100px;
   width: calc(50% - 15px);
-  /* background-color: #191c26; */
+  background-color: #191c26;
   background-position: center;
   background-size: cover;
 }
@@ -1560,7 +1748,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 .contacts-item:last-child {
   margin-bottom: 70px;
 }
-}
+} */
+
 /* FOOTER */
 .footer {
   padding-top: 56px;

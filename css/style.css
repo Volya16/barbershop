@@ -1246,7 +1246,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 
 /* CONTACTS */
-.contact-container {
+.contacts {
   background-color: var(--section-booking);
 }
 
@@ -1263,29 +1263,78 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   padding-bottom: 84px;
   background-color: var(--section-booking);
 }
-.form-title {
+
+.booking-form {
+}
+
+.booking-title {
   color: var(--light-title-color);
   margin-bottom: 44px;
 }
-.title {
-}
-.form {
-}
+
+
 .online-field {
+  position: relative;
+  /* margin-bottom: 44px; */
+  /* width: 100%;
+  max-width: 418px; */
 }
-.online-input {
-}
+
 .online-item {
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  background-color: transparent;
+  outline: none;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  color: var(--light-title-color);
+  transition: border-color var(--transition);
 }
+
+.online-item:focus,
+.online-item:not(:placeholder-shown) {
+  border-color: var(--light-title-color);
+}
+
+.online-item:focus + .online-label,
+.online-item:not(:placeholder-shown) + .online-label {
+  transform: translateY(-100%);
+  color: var(--light-title-color);
+}
+
+.online-input {
+  width: 100%;
+  /* max-width: 418px; */
+  height: 24px;
+  transition: transform var(--transition), border-color var(--transition);
+}
+
 .online-label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: rgba(157, 164, 189, 0.4);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: transform var(--transition), color var(--transition);
 }
-.online-wrap-mess {
-}
+
 .online-text {
+  /* width: 100%;
+  max-width: 418px; */
+  height: 76px;
+  resize: none;
 }
+
 .online-btn {
-}
-.btn {
+  color: var(--light-title-color);
 }
 
 
@@ -1303,9 +1352,19 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   width: calc(50% + 15px);
 }
 
-.form {
+.booking-form {
   display: flex;
   flex-wrap: wrap;
+  gap: 44px 30px;
+}
+
+.online-field:first-child, 
+.online-field:nth-child(2) {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.online-field:last-child {
+  flex-basis: 100%;
 }
 }
 

@@ -1275,9 +1275,17 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
 .online-field {
   position: relative;
-  /* margin-bottom: 44px; */
+  margin-bottom: 44px;
   /* width: 100%;
   max-width: 418px; */
+}
+
+.online-field:last-child {
+  flex-basis: 100%;
+}
+
+.online-text {
+  width: 100%;
 }
 
 .online-item {
@@ -1329,12 +1337,14 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 .online-text {
   /* width: 100%;
   max-width: 418px; */
-  height: 76px;
+  height: 62px;
   resize: none;
 }
 
 .online-btn {
   color: var(--light-title-color);
+  display: block;
+  margin: auto;
 }
 
 
@@ -1342,6 +1352,27 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .contact-form {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.booking-form {
+}
+
+.form-wraper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.online-field:first-child {
+  margin-right: 30px;
+}
+
+.online-field:first-child, 
+.online-field:nth-child(2) {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.online-btn {
+  margin: 0;
 }
 }
 
@@ -1353,18 +1384,15 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 
 .booking-form {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 44px 30px;
-}
-
-.online-field:first-child, 
-.online-field:nth-child(2) {
-  flex-basis: calc((100% - 30px) / 2);
+  padding-right: 40px;
 }
 
 .online-field:last-child {
   flex-basis: 100%;
+}
+
+.online-text {
+  width: 100%;
 }
 }
 
@@ -1383,12 +1411,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
   .contact-info {
-  padding-top: 84px;
-  padding-bottom: 84px;
-  background-color: var(--section-booking);
   background-image: url(../images/contact-bg@2x.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
   }
 }
 

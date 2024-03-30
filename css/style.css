@@ -1258,7 +1258,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
 
 /* Form  */
-.contact-form {
+.online-contact-form {
   padding-top: 84px;
   padding-bottom: 84px;
   background-color: var(--section-booking);
@@ -1341,7 +1341,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
 
 @media screen and (min-width: 768px) {
-  .contact-form {
+  .online-contact-form {
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -1366,7 +1366,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 
 @media screen and (min-width: 1200px) {
-  .contact-form {
+  .online-contact-form {
   padding-top: 120px;
   padding-bottom: 120px;
   width: calc(50% + 15px);
@@ -1430,9 +1430,9 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   letter-spacing: 0.02em;
 }
 
-.contacts-adress {
+/* .contacts-adress {
   font-weight: 700;
-}
+} */
 
 .contacts-tel {
   color: #9da4bd;
@@ -1474,12 +1474,17 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   letter-spacing: 0.02em;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
 .contact-info {
     padding-top: 100px;
   padding-bottom: 100px;
     background-image: url(../images/contact-tab-bg.png);
   }
+
+.contacts-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
 }
 
 @media screen and (min-width: 1200px) {
@@ -1494,10 +1499,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   background-size: cover;
 }
 
-.contacts-wrapp {
-  display: flex;
-}
-
 .contacts-item:last-child {
   margin-bottom: 70px;
 }
@@ -1505,13 +1506,15 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
 /* FOOTER */
 .footer {
-  padding-top: 56px;
-  padding-bottom: 56px;
+  padding-top: 44px;
+  padding-bottom: 44px;
 }
 
-.footer-container {
+.footer-list {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 20px;
 }
 
 .footer-text {
@@ -1537,6 +1540,25 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
 .footer-link {
   color: var(--dark-title-color);
+}
+
+
+@media screen and (min-width: 1200px) {
+  .footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+  
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.footer-list {
+  margin-bottom: 0;
+}
 }
 
 /* MODAL*/

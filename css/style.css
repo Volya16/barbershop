@@ -1372,6 +1372,11 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   width: calc(50% + 15px);
 }
 
+.online-contact-form .container {
+  max-width: 615px;
+  margin-right: 0;
+}
+
 .online-field {
   flex-basis: 100%;
 }
@@ -1497,6 +1502,11 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   background-color: #191c26;
   background-position: center;
   background-size: cover;
+}
+
+.contact-info .container {
+  max-width: 615px;
+  margin-left: 0;
 }
 
 .contacts-item:last-child {

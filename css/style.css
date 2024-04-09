@@ -1174,7 +1174,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   transition: fill var(--transition);
 }
 
-.barbers-soc-icon:hover {
+.barbers-soc-link:hover,
+.barbers-soc-link:focus {
   fill: var(--hover-color);
 }
 
